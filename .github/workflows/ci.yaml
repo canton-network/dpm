@@ -22,8 +22,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: georgeorellanaDA
-          password: ${{ secrets.CANTON_ARTIFACTS_DEV_PAC }}
+          username: infra-da
+          password: ${{ secrets.DA_INFRA_PAC }}
 
       - name: Build and push image
         uses: docker/build-push-action@v6
